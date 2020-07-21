@@ -1,6 +1,6 @@
 import React from 'react';
+import Inputform from './Inputform.jsx';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (<Inputform />);
 }
-  

@@ -1,17 +1,17 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-const inputForm = ({ username, onChange, onSubmit }) => (
+const Inputform = ({ username, onChange, onSubmit }) => (
   <form onSubmit={onSubmit}>
     <input type='text' value={username} onChange={onChange}/>
     <button>Submit</button>
   </form>
 );
 
-inputForm.propTypes = {
+Inputform.propTypes = {
   username: propTypes.string.isRequired,
   onChange: propTypes.func.isRequired,
   onSubmit: propTypes.func.isRequired
 };
 
-export default inputForm;
+export default Inputform;
