@@ -1,23 +1,32 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-const Display = ({ username, followers, followings, profile }) => (
-  <li>
-    {username}
+const Display = ({ followers, following, html_url, repos }) => (
+  <ul>
     <br></br>
-    {followers}
+    <li>FOLLOWERS: {followers}</li>
     <br></br>
-    {followings}
+    <li>FOLLOWING: {following}</li>
     <br></br>
-    {profile}
-  </li>
+    <li>LINK: <a href={html_url}>{html_url}</a></li>
+    <br></br>
+    <li>REPOS <ul>{repos.map(repo => {
+      return (
+        <li key={repo.name}>
+          <a href={repo.html_url}>{repo.name}</a>
+        </li>
+      );
+    })}
+    </ul>
+    </li>
+  </ul>
 );
 
 Display.propTypes = {
-  username: propTypes.string.isRequired,
   followers: propTypes.number.isRequired,
-  followings: propTypes.number.isRequired,
-  profile: propTypes.string.isRequired
+  following: propTypes.number.isRequired,
+  html_url: propTypes.string.isRequired,
+  repos: propTypes.arrayOf(propTypes.object).isRequired
 };
 
 export default Display;
