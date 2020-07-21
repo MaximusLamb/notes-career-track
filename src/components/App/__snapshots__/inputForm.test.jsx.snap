@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`inputForm component renders inputForm 1`] = `
+<inputForm
+  onChange={[Function]}
+  onSubmit={[Function]}
+  username="someBroski"
+/>
+`;
