@@ -1,13 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Display component renders User Display 1`] = `
-<li>
-  crazyTony
+<ul>
   <br />
-  300
+  <li>
+    FOLLOWERS: 
+    300
+  </li>
   <br />
-  200
+  <li>
+    FOLLOWING: 
+    200
+  </li>
   <br />
-  http://website.gov
-</li>
+  <li>
+    LINK: 
+    <a
+      href="http://website.gov"
+    >
+      http://website.gov
+    </a>
+  </li>
+  <br />
+  <li>
+    REPOS 
+    <ul>
+      <li>
+        <a />
+      </li>
+    </ul>
+  </li>
+</ul>
 `;

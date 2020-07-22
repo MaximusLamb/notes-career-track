@@ -4,7 +4,7 @@ import Display from './Display';
 
 describe('Display component', () => {
   it('renders User Display', () => {
-    const wrapper = shallow(<Display username="crazyTony" followers={300} following={200} html_url={'http://website.gov'}/>);
+    const wrapper = shallow(<Display username="crazyTony" followers={300} following={200} html_url={'http://website.gov'} repos={['stuff']}/>);
     expect(wrapper).toMatchSnapshot();
   });
 });
