@@ -29,7 +29,7 @@ export default class MainContainer extends Component {
   }
 
   render() {
-    console.log(this.state.repos_url);
+    
     const { username, followers, following, html_url, repos } = this.state;
     return (
       <div>
