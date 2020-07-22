@@ -25,8 +25,14 @@ exports[`Display component renders User Display 1`] = `
   <li>
     REPOS 
     <ul>
-      <li>
-        <a />
+      <li
+        key="crazyTony"
+      >
+        <a
+          href="http://website.gov"
+        >
+          crazyTony
+        </a>
       </li>
     </ul>
   </li>
